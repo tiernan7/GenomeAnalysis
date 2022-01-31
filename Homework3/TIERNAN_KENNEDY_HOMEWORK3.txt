@@ -1,0 +1,1075 @@
+Assignment: GS 540 HW3
+Name: Tiernan Kennedy
+Email: tiernan7@cs.washington.edu
+Language: Python
+Runtime: 3.19 min
+
+Nucleotide Histogram:
+A=914836
+C=486187
+G=475631
+T=920846
+N=600
+
+Background Frequency:
+A=0.3281
+C=0.1719
+G=0.1719
+T=0.3281
+
+Count Matrix:
+-10 1050 234 790 654 
+-9 950 229 922 627 
+-8 896 245 902 685 
+-7 942 196 740 850 
+-6 1054 264 605 805 
+-5 1129 240 457 902 
+-4 1138 324 406 860 
+-3 1177 292 501 758 
+-2 1167 278 318 965 
+-1 926 292 281 1229 
+0 2308 0 239 181 
+1 0 0 0 2728 
+2 0 0 2728 0 
+3 1110 433 683 502 
+4 913 665 417 733 
+5 1161 300 321 946 
+6 1333 312 613 470 
+7 1134 430 389 775 
+8 1084 314 314 1016 
+9 1233 274 612 609 
+10 1083 385 335 925 
+
+Frequency Matrix:
+-10 0.3849 0.0858 0.2896 0.2397 
+-9 0.3482 0.0839 0.3380 0.2298 
+-8 0.3284 0.0898 0.3306 0.2511 
+-7 0.3453 0.0718 0.2713 0.3116 
+-6 0.3864 0.0968 0.2218 0.2951 
+-5 0.4139 0.0880 0.1675 0.3306 
+-4 0.4172 0.1188 0.1488 0.3152 
+-3 0.4315 0.1070 0.1837 0.2779 
+-2 0.4278 0.1019 0.1166 0.3537 
+-1 0.3394 0.1070 0.1030 0.4505 
+0 0.8460 0.0000 0.0876 0.0663 
+1 0.0000 0.0000 0.0000 1.0000 
+2 0.0000 0.0000 1.0000 0.0000 
+3 0.4069 0.1587 0.2504 0.1840 
+4 0.3347 0.2438 0.1529 0.2687 
+5 0.4256 0.1100 0.1177 0.3468 
+6 0.4886 0.1144 0.2247 0.1723 
+7 0.4157 0.1576 0.1426 0.2841 
+8 0.3974 0.1151 0.1151 0.3724 
+9 0.4520 0.1004 0.2243 0.2232 
+10 0.3970 0.1411 0.1228 0.3391 
+
+Weight Matrix:
+-10 0.2304 -1.0030 0.7524 -0.4527 
+-9 0.0860 -1.0341 0.9753 -0.5135 
+-8 0.0015 -0.9367 0.9437 -0.3858 
+-7 0.0738 -1.2586 0.6581 -0.0745 
+-6 0.2359 -0.8289 0.3675 -0.1530 
+-5 0.3350 -0.9664 -0.0373 0.0112 
+-4 0.3465 -0.5335 -0.2080 -0.0576 
+-3 0.3951 -0.6835 0.0953 -0.2398 
+-2 0.3828 -0.7544 -0.5604 0.1086 
+-1 0.0491 -0.6835 -0.7389 0.4575 
+0 1.3666 -99.0000 -0.9725 -2.3060 
+1 -99.0000 -99.0000 -99.0000 1.6078 
+2 -99.0000 -99.0000 2.5403 -99.0000 
+3 0.3105 -0.1151 0.5424 -0.8343 
+4 0.0287 0.5039 -0.1694 -0.2881 
+5 0.3753 -0.6445 -0.5469 0.0799 
+6 0.5747 -0.5879 0.3864 -0.9293 
+7 0.3414 -0.1251 -0.2697 -0.2078 
+8 0.2763 -0.5787 -0.5787 0.1829 
+9 0.4622 -0.7753 0.3841 -0.5555 
+10 0.2750 -0.2846 -0.4853 0.0475 
+
+Maximum Score: 14.4796545659
+
+Score Histogram CDS:
+-3 2
+-2 10
+-1 12
+0 64
+1 82
+2 138
+3 221
+4 237
+5 379
+6 433
+7 421
+8 283
+9 226
+10 123
+11 55
+12 42
+lt-50 : 0
+
+Score Histogram All:
+-9 3
+-8 33
+-7 117
+-6 571
+-5 1964
+-4 5306
+-3 11270
+-2 18975
+-1 27161
+0 34748
+1 36118
+2 35760
+3 32274
+4 27030
+5 19682
+6 12814
+7 7592
+8 3531
+9 1165
+10 408
+11 114
+12 48
+lt-50 : 5319476
+
+Position List:
+488.0 0.0 10.9094
+1972.0 0.0 10.8086
+9184.0 0.0 11.0282
+16315.0 0.0 10.8428
+25863.0 0.0 10.2488
+32239.0 0.0 10.0247
+42300.0 0.0 11.0931
+42618.0 0.0 10.9816
+45573.0 0.0 10.9917
+45696.0 0.0 10.1578
+50642.0 0.0 11.2022
+52705.0 0.0 10.2214
+56893.0 0.0 10.9068
+83755.0 0.0 11.3238
+98590.0 0.0 10.5610
+104334.0 0.0 10.6315
+111275.0 0.0 12.2057
+120297.0 0.0 12.2057
+122310.0 0.0 10.0736
+122613.0 0.0 11.7212
+124361.0 0.0 12.2057
+128239.0 0.0 12.2057
+129382.0 0.0 10.0823
+139071.0 0.0 10.7771
+153273.0 0.0 11.4861
+164743.0 0.0 10.1734
+170628.0 0.0 10.9198
+173760.0 0.0 10.8107
+194066.0 0.0 10.3412
+199152.0 0.0 11.2975
+200634.0 0.0 11.2423
+201887.0 0.0 10.2908
+201930.0 0.0 10.0012
+204731.0 0.0 10.3260
+205496.0 0.0 10.0103
+205999.0 0.0 10.0829
+206537.0 0.0 10.2975
+208172.0 0.0 10.5195
+210382.0 0.0 10.6818
+216449.0 0.0 10.8455
+219350.0 0.0 10.6061
+226143.0 0.0 10.3558
+229234.0 0.0 10.6144
+244670.0 0.0 11.0475
+249337.0 0.0 10.0442
+252715.0 0.0 10.0275
+262358.0 0.0 10.2778
+268501.0 0.0 10.6420
+274143.0 0.0 10.7771
+276593.0 0.0 11.4434
+286964.0 0.0 12.2057
+290717.0 0.0 10.2124
+302699.0 0.0 11.4566
+307014.0 0.0 12.1006
+310037.0 0.0 10.1455
+311751.0 0.0 10.6594
+318013.0 0.0 10.3468
+327311.0 0.0 10.5565
+333364.0 0.0 11.0016
+345341.0 0.0 10.9081
+345624.0 0.0 10.0891
+353779.0 0.0 10.0286
+357798.0 0.0 10.1017
+359134.0 0.0 11.4783
+363303.0 0.0 10.1087
+364450.0 0.0 10.2014
+365327.0 0.0 10.1954
+373874.0 0.0 10.0034
+375915.0 0.0 10.2332
+385338.0 0.0 10.0394
+385988.0 0.0 10.3668
+387043.0 0.0 10.7226
+387394.0 0.0 12.0191
+393844.0 0.0 10.3603
+393893.0 0.0 10.2051
+394982.0 0.0 10.1455
+396951.0 0.0 10.1087
+398648.0 0.0 10.8079
+398854.0 0.0 11.5520
+398945.0 0.0 11.0557
+399650.0 0.0 10.4835
+401408.0 0.0 11.3526
+407632.0 0.0 11.8604
+408804.0 0.0 10.0394
+421522.0 0.0 10.9480
+424728.0 0.0 11.0219
+425500.0 0.0 10.2033
+428064.0 0.0 10.1020
+429680.0 0.0 10.2201
+442070.0 0.0 10.2576
+450150.0 0.0 10.7563
+455598.0 0.0 10.5762
+467707.0 0.0 10.5174
+469374.0 0.0 11.3526
+475598.0 0.0 11.8604
+476770.0 0.0 10.0394
+497147.0 0.0 11.2610
+498800.0 0.0 10.1017
+504402.0 0.0 11.8423
+508906.0 0.0 10.1417
+514123.0 0.0 10.0823
+516772.0 0.0 11.3403
+528047.0 0.0 10.3082
+540991.0 0.0 10.6188
+544327.0 0.0 10.0804
+549579.0 0.0 10.0830
+553602.0 0.0 10.1715
+557526.0 0.0 11.0893
+569871.0 0.0 11.8007
+569926.0 0.0 10.0203
+570804.0 0.0 11.3767
+579191.0 0.0 10.7771
+580889.0 0.0 10.7508
+584746.0 0.0 10.3624
+593212.0 0.0 10.2153
+595303.0 0.0 10.4979
+599457.0 0.0 10.7005
+602806.0 0.0 10.0814
+605195.0 0.0 11.1494
+611782.0 0.0 10.9364
+614864.0 0.0 11.7285
+617434.0 0.0 10.5500
+620723.0 0.0 10.8507
+625528.0 0.0 10.9106
+640282.0 0.0 10.3111
+643923.0 0.0 10.7930
+662546.0 0.0 12.0314
+662860.0 0.0 10.1734
+666814.0 0.0 12.1006
+672837.0 0.0 12.2057
+677821.0 0.0 12.2057
+686569.0 0.0 10.1017
+695579.0 0.0 10.0442
+709313.0 0.0 10.1455
+713409.0 0.0 11.1044
+713634.0 0.0 10.7756
+714172.0 0.0 10.0829
+714675.0 0.0 10.0103
+715940.0 0.0 10.2166
+717596.0 0.0 10.9524
+719354.0 0.0 11.5709
+721312.0 0.0 10.6123
+733142.0 0.0 11.4566
+737457.0 0.0 12.1006
+740480.0 0.0 10.1455
+742194.0 0.0 10.6594
+747963.0 0.0 10.0394
+749224.0 0.0 11.5125
+750044.0 0.0 10.3056
+750416.0 0.0 10.5168
+750838.0 0.0 11.3355
+751103.0 0.0 11.0406
+754474.0 0.0 10.3353
+754920.0 0.0 10.7020
+759564.0 0.0 10.2750
+770190.0 0.0 10.0388
+770866.0 0.0 10.9613
+781372.0 0.0 10.9519
+783578.0 0.0 10.7710
+786721.0 0.0 12.2057
+790910.0 0.0 10.4451
+792683.0 0.0 10.5982
+804617.0 0.0 10.1850
+806626.0 0.0 10.3121
+824849.0 0.0 10.0394
+828674.0 0.0 10.5438
+829116.0 0.0 10.0714
+832949.0 0.0 10.3353
+833395.0 0.0 10.7020
+835092.0 0.0 10.6158
+835621.0 0.0 10.2750
+836596.0 0.0 10.4996
+837099.0 0.0 10.3903
+841542.0 0.0 10.8973
+841935.0 0.0 11.0510
+845623.0 0.0 11.0878
+845945.0 0.0 10.9613
+855199.0 0.0 12.9959
+856869.0 0.0 10.9519
+857683.0 0.0 10.0650
+865475.0 0.0 11.4261
+878758.0 0.0 11.6990
+881634.0 0.0 10.0303
+882871.0 0.0 10.2105
+884803.0 0.0 10.5291
+893766.0 0.0 10.2696
+894366.0 0.0 11.0016
+895265.0 0.0 10.3125
+899787.0 0.0 10.0394
+907124.0 0.0 10.4155
+913522.0 0.0 10.1979
+916386.0 0.0 10.6977
+923468.0 0.0 10.2696
+924068.0 0.0 11.0016
+931846.0 0.0 10.0757
+933024.0 0.0 10.0468
+953156.0 0.0 10.1657
+961851.0 0.0 10.3862
+963844.0 0.0 10.5210
+966642.0 0.0 10.6690
+968499.0 0.0 11.3403
+976549.0 0.0 10.0394
+977787.0 0.0 11.1078
+988092.0 0.0 10.4328
+991185.0 0.0 10.4847
+995303.0 0.0 10.1720
+1002089.0 0.0 11.2945
+1002822.0 0.0 10.1661
+1009505.0 0.0 10.2709
+1011049.0 0.0 12.4754
+1014667.0 0.0 10.6734
+1016426.0 0.0 10.1538
+1021779.0 0.0 11.1798
+1023834.0 0.0 11.6699
+1028921.0 0.0 10.0992
+1031441.0 0.0 12.2304
+1034028.0 0.0 10.2025
+1068457.0 0.0 11.6688
+1071729.0 0.0 10.3615
+1077997.0 0.0 11.9092
+1084142.0 0.0 10.8455
+1085977.0 0.0 10.5806
+1088367.0 0.0 10.1017
+1089710.0 0.0 11.4783
+1099684.0 0.0 12.7117
+1102885.0 0.0 10.4660
+1104358.0 0.0 10.4720
+1118655.0 0.0 10.1734
+1121874.0 0.0 10.9403
+1129805.0 0.0 10.3150
+1144487.0 0.0 10.0394
+1147193.0 0.0 10.7217
+1150080.0 0.0 11.0016
+1155392.0 0.0 12.2057
+1158426.0 0.0 10.0394
+1159715.0 0.0 11.0016
+1162602.0 0.0 10.7217
+1177218.0 0.0 10.8455
+1180008.0 0.0 10.1455
+1183140.0 0.0 12.7117
+1193114.0 0.0 11.4783
+1194457.0 0.0 10.1017
+1196847.0 0.0 10.5806
+1201954.0 0.0 10.6144
+1205045.0 0.0 10.3558
+1211838.0 0.0 10.6061
+1214739.0 0.0 10.8455
+1220806.0 0.0 10.6818
+1223016.0 0.0 10.5195
+1224651.0 0.0 10.2975
+1225189.0 0.0 10.0829
+1225692.0 0.0 10.0103
+1226457.0 0.0 10.3260
+1229258.0 0.0 10.0012
+1229301.0 0.0 10.2908
+1230554.0 0.0 11.2423
+1232036.0 0.0 11.2975
+1237122.0 0.0 10.3412
+1257428.0 0.0 10.8107
+1260560.0 0.0 10.9198
+1266445.0 0.0 10.1734
+1277915.0 0.0 11.4861
+1292117.0 0.0 10.7771
+1301806.0 0.0 10.0823
+1302949.0 0.0 12.2057
+1306827.0 0.0 12.2057
+1308575.0 0.0 11.7212
+1308878.0 0.0 10.0736
+1310891.0 0.0 12.2057
+1319913.0 0.0 12.2057
+1326854.0 0.0 10.6315
+1332598.0 0.0 10.5610
+1337775.0 0.0 10.5610
+1343519.0 0.0 10.6315
+1350460.0 0.0 12.2057
+1359482.0 0.0 12.2057
+1361495.0 0.0 10.0736
+1361798.0 0.0 11.7212
+1363546.0 0.0 12.2057
+1367424.0 0.0 12.2057
+1368567.0 0.0 10.0823
+1378891.0 0.0 10.0394
+1380129.0 0.0 11.1078
+1390434.0 0.0 10.4328
+1393527.0 0.0 10.4847
+1397645.0 0.0 10.1720
+1404431.0 0.0 11.2945
+1405164.0 0.0 10.1661
+1411847.0 0.0 10.2709
+1413391.0 0.0 12.4754
+1417009.0 0.0 10.6734
+1418768.0 0.0 10.1538
+1424121.0 0.0 11.1798
+1426176.0 0.0 11.6699
+1431263.0 0.0 10.0992
+1433783.0 0.0 12.2304
+1436370.0 0.0 10.2025
+1470799.0 0.0 11.6688
+1474071.0 0.0 10.3615
+1480339.0 0.0 11.9092
+1488528.0 0.0 10.7927
+1491736.0 0.0 10.1997
+1498281.0 0.0 10.7742
+1503091.0 0.0 11.3519
+1503582.0 0.0 10.1017
+1505013.0 0.0 10.3136
+1507031.0 0.0 10.3111
+1511914.0 0.0 10.2975
+1513549.0 0.0 10.5195
+1515759.0 0.0 10.6818
+1530821.0 0.0 10.7411
+1541318.0 0.0 10.1455
+1544033.0 0.0 10.1017
+1546104.0 0.0 10.0142
+1552162.0 0.0 11.3403
+1554019.0 0.0 10.6690
+1556817.0 0.0 10.5210
+1558810.0 0.0 10.3862
+1567505.0 0.0 10.1657
+1587637.0 0.0 10.0468
+1588815.0 0.0 10.0757
+1596593.0 0.0 11.0016
+1597193.0 0.0 10.2696
+1604275.0 0.0 10.6977
+1607139.0 0.0 10.1979
+1613537.0 0.0 10.4155
+1620874.0 0.0 10.0394
+1625396.0 0.0 10.3125
+1626295.0 0.0 11.0016
+1626895.0 0.0 10.2696
+1635858.0 0.0 10.5291
+1637790.0 0.0 10.2105
+1639027.0 0.0 10.0303
+1641903.0 0.0 11.6990
+1655186.0 0.0 11.4261
+1662978.0 0.0 10.0650
+1663792.0 0.0 10.9519
+1665462.0 0.0 12.9959
+1674716.0 0.0 10.9613
+1675038.0 0.0 11.0878
+1678726.0 0.0 11.0510
+1679119.0 0.0 10.8973
+1683562.0 0.0 10.3903
+1684065.0 0.0 10.4996
+1685040.0 0.0 10.2750
+1685569.0 0.0 10.6158
+1687266.0 0.0 10.7020
+1687712.0 0.0 10.3353
+1691083.0 0.0 11.0406
+1691348.0 0.0 11.3355
+1691770.0 0.0 10.5168
+1692142.0 0.0 10.3056
+1692962.0 0.0 11.5125
+1694223.0 0.0 10.0394
+1699992.0 0.0 10.6594
+1701706.0 0.0 10.1455
+1704729.0 0.0 12.1006
+1709044.0 0.0 11.4566
+1720874.0 0.0 10.6123
+1722832.0 0.0 11.5709
+1724590.0 0.0 10.9524
+1726246.0 0.0 10.2166
+1727511.0 0.0 10.0103
+1728014.0 0.0 10.0829
+1728552.0 0.0 10.7756
+1728777.0 0.0 11.1044
+1732873.0 0.0 10.1455
+1746607.0 0.0 10.0442
+1755617.0 0.0 10.1017
+1764365.0 0.0 12.2057
+1769349.0 0.0 12.2057
+1775372.0 0.0 12.1006
+1779326.0 0.0 10.1734
+1779640.0 0.0 12.0314
+1798263.0 0.0 10.7930
+1801904.0 0.0 10.3111
+1816658.0 0.0 10.9106
+1821463.0 0.0 10.8507
+1824752.0 0.0 10.5500
+1827322.0 0.0 11.7285
+1830404.0 0.0 10.9364
+1836991.0 0.0 11.1494
+1839380.0 0.0 10.0814
+1842729.0 0.0 10.7005
+1846883.0 0.0 10.4979
+1848974.0 0.0 10.2153
+1857440.0 0.0 10.3624
+1861297.0 0.0 10.7508
+1862995.0 0.0 10.7771
+1871382.0 0.0 11.3767
+1872260.0 0.0 10.0203
+1872315.0 0.0 11.8007
+1884660.0 0.0 11.0893
+1888584.0 0.0 10.1715
+1892607.0 0.0 10.0830
+1897859.0 0.0 10.0804
+1901195.0 0.0 10.6188
+1914139.0 0.0 10.3082
+1925414.0 0.0 11.3403
+1928063.0 0.0 10.0823
+1938387.0 0.0 10.0394
+1939625.0 0.0 11.1078
+1949930.0 0.0 10.4328
+1953023.0 0.0 10.4847
+1957141.0 0.0 10.1720
+1963927.0 0.0 11.2945
+1964660.0 0.0 10.1661
+1971343.0 0.0 10.2709
+1972887.0 0.0 12.4754
+1976505.0 0.0 10.6734
+1978264.0 0.0 10.1538
+1983617.0 0.0 11.1798
+1985672.0 0.0 11.6699
+1990759.0 0.0 10.0992
+1993279.0 0.0 12.2304
+1995866.0 0.0 10.2025
+2030295.0 0.0 11.6688
+2033567.0 0.0 10.3615
+2039835.0 0.0 11.9092
+2045980.0 0.0 10.8455
+2047815.0 0.0 10.5806
+2050205.0 0.0 10.1017
+2051548.0 0.0 11.4783
+2061522.0 0.0 12.7117
+2064654.0 0.0 10.1455
+2067444.0 0.0 10.8455
+2082060.0 0.0 10.7217
+2084947.0 0.0 11.0016
+2086236.0 0.0 10.0394
+2089270.0 0.0 12.2057
+2094582.0 0.0 11.0016
+2097469.0 0.0 10.7217
+2100175.0 0.0 10.0394
+2114857.0 0.0 10.3150
+2122788.0 0.0 10.9403
+2126007.0 0.0 10.1734
+2140304.0 0.0 10.4720
+2141777.0 0.0 10.4660
+2148947.0 0.0 10.5011
+2151722.0 0.0 12.1006
+2155717.0 0.0 10.8455
+2157311.0 0.0 10.5323
+2159277.0 0.0 10.5748
+2162370.0 0.0 12.2102
+2163630.0 0.0 10.7742
+2166344.0 0.0 12.2057
+2170102.0 0.0 10.1800
+2170366.0 0.0 10.3957
+2174171.0 0.0 10.1017
+2188805.0 0.0 11.5807
+2190029.0 0.0 11.0090
+2195958.0 0.0 11.0016
+2197059.0 0.0 10.6898
+2200182.0 0.0 11.5943
+2200655.0 0.0 10.1017
+2204477.0 0.0 10.5584
+2215389.0 0.0 10.0811
+2219894.0 0.0 10.1488
+2227995.0 0.0 11.0016
+2233532.0 0.0 10.0466
+2238553.0 0.0 10.2011
+2240091.0 0.0 10.3588
+2253281.0 0.0 10.0394
+2255029.0 0.0 10.8455
+2256957.0 0.0 10.9500
+2266090.0 0.0 12.2057
+2267706.0 0.0 10.4267
+2277966.0 0.0 10.8114
+2278724.0 0.0 10.5438
+2283020.0 0.0 10.3353
+2283466.0 0.0 10.7020
+2285163.0 0.0 10.6158
+2285692.0 0.0 10.2750
+2286667.0 0.0 10.4996
+2287170.0 0.0 10.3903
+2291613.0 0.0 10.8973
+2292006.0 0.0 11.0510
+2295694.0 0.0 11.0878
+2296016.0 0.0 10.9613
+2305270.0 0.0 12.9959
+2306940.0 0.0 10.9519
+2307754.0 0.0 10.0650
+2315546.0 0.0 11.4261
+2328829.0 0.0 11.6990
+2331705.0 0.0 10.0303
+2332942.0 0.0 10.2105
+2334874.0 0.0 10.5291
+2343837.0 0.0 10.2696
+2344437.0 0.0 11.0016
+2345336.0 0.0 10.3125
+2349858.0 0.0 10.0394
+2357195.0 0.0 10.4155
+2363593.0 0.0 10.1979
+2366457.0 0.0 10.6977
+2373539.0 0.0 10.2696
+2374139.0 0.0 11.0016
+2381917.0 0.0 10.0757
+2383095.0 0.0 10.0468
+2403227.0 0.0 10.1657
+2411922.0 0.0 10.3862
+2413915.0 0.0 10.5210
+2416713.0 0.0 10.6690
+2418570.0 0.0 11.3403
+2424628.0 0.0 10.0142
+2426699.0 0.0 10.1017
+2429414.0 0.0 10.1455
+2439911.0 0.0 10.7411
+2462358.0 0.0 10.7771
+2465137.0 0.0 11.0253
+2465393.0 0.0 10.7625
+2465952.0 0.0 10.1552
+2467765.0 0.0 10.0372
+2472486.0 0.0 10.5174
+2484595.0 0.0 10.5762
+2490043.0 0.0 10.7563
+2496684.0 0.0 10.4670
+2506797.0 0.0 10.9480
+2510003.0 0.0 11.0219
+2510775.0 0.0 10.2033
+2513339.0 0.0 10.1020
+2514955.0 0.0 10.2201
+2527345.0 0.0 10.2576
+2544689.0 0.0 10.0034
+2546730.0 0.0 10.2332
+2558189.0 0.0 10.3603
+2558238.0 0.0 10.2051
+2559327.0 0.0 10.1455
+2565234.0 0.0 10.3439
+2567095.0 0.0 10.7180
+2576863.0 0.0 10.0750
+2580525.0 0.0 10.2282
+2583618.0 0.0 10.1520
+2584510.0 0.0 10.6712
+2592164.0 0.0 10.0823
+2602488.0 0.0 10.0394
+2603726.0 0.0 11.1078
+2614031.0 0.0 10.4328
+2617124.0 0.0 10.4847
+2621242.0 0.0 10.1720
+2628028.0 0.0 11.2945
+2628761.0 0.0 10.1661
+2635444.0 0.0 10.2709
+2636988.0 0.0 12.4754
+2640606.0 0.0 10.6734
+2642365.0 0.0 10.1538
+2647718.0 0.0 11.1798
+2649773.0 0.0 11.6699
+2654860.0 0.0 10.0992
+2657380.0 0.0 12.2304
+2659967.0 0.0 10.2025
+2694396.0 0.0 11.6688
+2697668.0 0.0 10.3615
+2703936.0 0.0 11.9092
+2710081.0 0.0 10.8455
+2711916.0 0.0 10.5806
+2714306.0 0.0 10.1017
+2715649.0 0.0 11.4783
+2725623.0 0.0 12.7117
+2728755.0 0.0 10.1455
+2731545.0 0.0 10.8455
+2746161.0 0.0 10.7217
+2749048.0 0.0 11.0016
+2750337.0 0.0 10.0394
+2753371.0 0.0 12.2057
+2758683.0 0.0 11.0016
+2761570.0 0.0 10.7217
+2764276.0 0.0 10.0394
+2778958.0 0.0 10.3150
+2786889.0 0.0 10.9403
+2790108.0 0.0 10.1734
+
+program:
+from bio import seqio
+import re
+import numpy as np
+import math
+import os
+import timeit
+
+
+#a function writes certain program checks to a log file
+def log(text):
+    with open("log","a") as logfile:
+        logfile.write(text)
+
+
+start = timeit.default_timer()
+np.set_printoptions(suppress=true)
+
+#  record = seqio.read("armadillidium_vulgare_contig1.gbff","genbank")
+
+                         
+f = "armadillidium_vulgare_contig1.gbff" #filename
+o = "tiernan_kennedy_homework3.txt" #output filename
+
+#makes it easier to develope when writing in append mode
+if os.path.exists(o):
+    os.remove(o)
+
+#using biopython to extract the sequence from the genbank file
+record = seqio.read(f,"genbank")
+seq = str(record.seq)
+
+
+#counts the number of occurences of a character in a string
+def countnucleotide(seq, base):
+    count = 0
+    for i in range(len(seq)):
+        if seq[i] == base:
+            count += 1
+    return count
+
+log("the are are " + str(countnucleotide("tgatggtatgnntgatgk",'g')) + " gs in tgatggtatgnntgatgk" + '\n'
+)
+
+#the four bases in dna
+bases = ['a', 'c', 'g', 't']
+
+#a dictionary for finding complements
+basedict = {'a' : 't',
+            'c' : 'g',
+            't' : 'a',
+            'g' : 'c',
+            'n' : 'n'}
+
+#a hashing of the characters to ints
+basetonum = {'a' : 0,
+             'c' : 1,
+             'g' : 2,
+             't' : 3}
+
+#returns the reverse complement of a string
+def reversecomplement(s):
+    return "".join(np.flip([basedict[char] for char in s]))
+
+log("the reverse complement of t is: " + str(reversecomplement('t')) + '\n'
+    )
+
+
+#prints the nucleotide counts and frequencies
+def getnucleotidehistogram(sequence):
+    nucleotidecounts = np.zeros(5)
+    for base in bases:
+        nucleotidecounts[basetonum[base]] = countnucleotide(sequence, base)
+    s = sum(nucleotidecounts)
+    l = len(sequence)
+    returnstring = ""
+    returnstring += "background counts" + '\n'
+    returnstring += "a=" + str(int(nucleotidecounts[0])) + '\n'
+    returnstring += "c=" + str(int(nucleotidecounts[1])) + '\n'
+    returnstring += "g=" + str(int(nucleotidecounts[2])) + '\n'
+    returnstring += "t=" + str(int(nucleotidecounts[3])) + '\n'
+    returnstring += "n=" + str(int(l - s)) + '\n'
+    returnstring += '\n'
+    returnstring += "background frequencies" + '\n'
+    returnstring += "a=" + ("%.4f" % round(float((nucleotidecounts[0] + nucleotidecounts[3])) / (2*s), 4)) + '\n'
+    returnstring += "c=" + ("%.4f" % round(float((nucleotidecounts[1]+nucleotidecounts[2] )) / (2*s), 4)) + '\n'
+    returnstring += "g=" + ("%.4f" % round(float((nucleotidecounts[2]+nucleotidecounts[1])) / (2*s), 4)) + '\n'
+    returnstring += "t=" + ("%.4f" % round(float((nucleotidecounts[3] +nucleotidecounts[0]))/ (2*s), 4)) + '\n'
+
+    return returnstring
+
+log("the nucleotide histogram for atgctcannnnnnnkj is: " + str(getnucleotidehistogram('atgctcannnnnnnkj')) + '\n'
+)
+
+#opening the genbank file and reading it into a list of lines
+file = open(f, "r")
+alllines = file.readlines()
+file.close()
+
+
+#removes all empty characters from a string
+def removeemptycharacters(array):
+    return [x for x in array if x != '']
+
+log("the following text is on one line: " + str(removeemptycharacters("line 1 \n line 2")) + '\n'
+)
+
+
+
+#takes in an array of words from a line of a genbank file
+#returns true if the any of the words contain an ambiguous coordinate signature
+def badcoordinates(wordsarray):
+    return (re.search("<+|>+", wordsarray[-1]) != none)
+log("it is " + str(badcoordinates(["10002000>303"])) + " that 10002000>303 is a bad coordinate" + '\n'
+)
+
+
+#takes in a cds description containing a join statment
+#returns an ordered list of the bases around the start of the cds
+def brokenintervals(intervals, comp): #intervals is a list of each integer within a join statement in the orer of appearance, records whether or not the complemet
+    if not(comp): #handles the case where the join intervals are the on forward strand
+        returniterator = [] 
+        start = int(intervals[0]) - 1 #-1 adjustment tp translate genbank coordinates to array coordinates
+        returniterator = np.arange(start- 10 , start + 1) #generates the sites of the ten bases before and upto the start
+        ranges = [int(i) - 1 for i in intervals] #converts the entire list of intervals to array coordinates
+        forwardlength = [] 
+        ind = 1#distance from start site of current interval
+        r = 0#index of which set of intervals to consider
+        start = ranges[0]
+        while len(forwardlength) < 10: #generates the ten bases after the start
+            if (start + ind > ranges[r+1]): #if you're pointing to an adress out of the current interval...
+                r += 2
+                start = ranges[r]#...start at the next site
+                ind = 0#reset the distance of the pointer from the current start site
+            forwardlength += [start + ind]#add the array coordinates of that site in the interval to the output array
+            ind+=1
+        returniterator = np.append(returniterator, forwardlength)#merge the two halves of the sequence
+        return returniterator
+
+    else:#handles the case where the join intervals are on the reverse strand     
+        returniterator = []
+        a = np.flip([int(i) - 1 for i in intervals])#reverses the list of coordinates to account for navigating the interval in reverse and subtraction to convert to ar#ray coordinates
+        start = int(a[0])#start at the array coordinate of the last element in forward strand on the coding interval
+        returniterator = np.flip(np.arange(start , start + 11))#generates the coordinat running from 11 before the start site to the start site
+        forwardlength = []
+        ind = -1#the distcance from the start site
+        r = 0#the index of the interval in question
+        while len(forwardlength) < 10:#while you havent added enough stuff
+            if (start + ind < a[r+1]):#check to see if youre going to leave the interval
+                r += 2 
+                start = a[r] #if so go to the next interval
+                ind = 0
+            forwardlength += [start + ind]#add the array coordinates of the site to the sequence
+            ind+= -1
+        returniterator = np.append(returniterator, forwardlength)#add the second half of the sequence to the first
+        return returniterator
+
+log("the array sites for complement(join(1..10,11..30)) is " + str(brokenintervals([1,10,11,30], true)) + '\n'
+)
+
+#returns the column of an array
+def column(arr, i):
+    col = []
+    for st in arr:
+        col += [st[i]]
+    return col
+       
+
+log("the column second column of [[1,2,3],[4,5,6],[7,8,9]] is "  + str(column([[1,2,3],[4,5,6],[7,8,9]],1)) + '\n'
+)
+
+#takes a string text from a cds description, but not multiple lines
+def positiontochars(positionstring):
+    if (re.search('complement', positionstring) == none):# if there are no complement tags
+        if (re.search('join', positionstring) == none): #and no join tags
+            start = int(re.findall("\d+", positionstring)[0]) - 1 #then start site is the first numeral in the position string minus 1 to convert to array coordinates
+            return [seq[i] for i in np.arange(start - 10, start + 11)]#and we can return the ten elements on either side
+        else: #otherwise if there are no complement tags but there is a join statement
+            intervals = re.findall("\d+", positionstring)# convert the string to a flat list of position numeral for the brokenintervals function
+            return [seq[i] for i in brokenintervals(intervals, false)] #use the broken intervals helper function to find the list of coordinates
+    else:#otherwise if there are complement tags
+        if (re.search('join', positionstring) == none):#but no join statements
+            start = int(re.findall("\d+", positionstring)[-1]) - 1 #start at the last numeral in the cds description, and subtract 1 for array coordinates
+            return[basedict[seq[i]] for i in np.flip( np.arange(start - 10, start + 11))]#return the reversed order of the ten elements around the start site
+
+        else:# and if there are no join tags but the start is on the complementary strand
+            intervals = re.findall("\d+", positionstring)# get the list of numeraks in the cds desription
+            return [basedict[seq[i]] for i in brokenintervals(intervals, true)]#use the broken intervals function to generates, which are reversed automatically by roken intervals
+log("the characters for (1..10) is :" + str(positiontochars("(1..10)")) + '\n'
+    )
+
+#takes in the text from any line containing cds and extracts the portion of it containing the description and finds any overflow lines
+positions = []
+for i, lines in enumerate(alllines):
+    cdscheck = (re.search("cds", lines) != none)#gets all lines containing "cds"
+    if cdscheck and re.search('[0-9]',lines) != none:#but only takes those with numerals (to avoid the case when the 'cds' protein sequence is accidentally parsed)
+        words = re.split("\s", lines) #split the line into words
+        words = removeemptycharacters(words)#and remove empty characters
+        if (badcoordinates(words)):#check to see if there are any ambiguous start or end sites
+            pass #and if so ignor these
+        else: #if the coorinates are okay
+            delete = false
+            if (re.search("complement|join", words[-1]) != none and words[-1][-1] != ")"):#checks to see if there are any descs that run onto two lines
+                ind = 1
+                delete = false
+                while words[-1][-1] != ")": #a loop that continues until the end of the description has been found, start by checking first line
+                    words[-1] += alllines[i+ind].strip()#adds the next line of sequence
+                    if re.search(">|<", alllines[i+ind]) != none:#and marks it in case there was a variable end position that wasnt caught in the first check
+                        delete = true 
+                    i+=1#goes to the next line
+            positions += [words[-1]]#adds the full description to the position array
+            if delete:
+                positions.pop(-1)#deletes the position if it was marked as such
+
+
+
+backgroundcounts = np.zeros(4)
+backgroundfrequencies = np.zeros(4)
+
+#counts the number of nucleotides of a,t,c and g in the genbank sequence
+for base in bases:
+    backgroundcounts[basetonum[base]] = countnucleotide(seq,base)
+
+for b  in bases:#converts the frequencies of nucleotides to their ratios 
+    backgroundfrequencies[basetonum[b]] = float(backgroundcounts[basetonum[b]] + backgroundcounts[basetonum[basedict[b]]]) / (2* sum(backgroundcounts)) #nucleotide counts are averaged with the sum of their complement to account for reverse stran
+
+
+allsequences = [positiontochars(pos) for pos in positions]#creating an array of windows of ten nucleotides on either side of each cds feature
+
+sitecounts = np.zeros((21,4))
+sitefrequencies = np.zeros((21,4))
+weightmatrix = np.zeros((21,4))
+
+
+#counts the number of nucleotides at each position in each sequence
+for i in range(len(sitecounts)):
+    for base in bases:
+        sitecounts[i][basetonum[base]] = countnucleotide(column(allsequences, i),base )
+
+#converts the counts from above to frequencies
+for i in range(len(sitefrequencies)):
+    s = sum(sitecounts[i])
+    for j in range(4):
+           sitefrequencies[i][j] = sitecounts[i][j] / s
+
+#perform a small correction and calculate weights for each base at each site
+for i in range(len(sitefrequencies)):
+    for base in bases:
+        if sitefrequencies[i][basetonum[base]] == 0:
+            weightmatrix[i][basetonum[base]] = -99.0
+        else:
+            weightmatrix[i][basetonum[base]] = np.log2(sitefrequencies[i][basetonum[base]] / backgroundfrequencies[basetonum[base]])
+
+
+#a function to score a sequence of 21 nucleotides against the weight matrix
+def scoresequence(s):
+    assert len(s) == 21, "the sequence: " + str(s) + " does not have length 21"
+    score = 0
+    for i,char in enumerate(s):
+        if char in bases:
+            score += weightmatrix[i][basetonum[char]] #compute the dot product of the sequence against the weight matrix
+        else: 
+            score += 0
+    return score
+
+log("the score of nnnnnnnnnnnnnnnnnnnna is " + str(scoresequence("nnnnnnnnnnnnnnnnnnnna")) + '\n'
+    )
+
+#a function that returns a histrogram of the scores of each cds site as a string
+def scorehistogramcds():
+    returnstring = ""
+    returnstring += "score histogram cds:" + '\n'
+    scores = []
+
+    for s in allsequences:#for each sequence we collected from the cds sites, we add its score, rounded down, to a list
+        scores += [math.floor(scoresequence(s))]
+
+      
+    returnstring += "lt-50 : " + str(len([i for i in scores if i < -50])) + '\n'#for each bin in the histogram we...
+    for i in range(-50,100):
+        count = len([j for j in scores if j == i]) #count the number of each score in the list and..
+        if count != 0:
+            returnstring += str(i) + " " + str(count) + '\n' #add that row to the histogram if the bin is nonempty
+    returnstring += '\n'
+      
+    return returnstring
+
+
+#a function that computes outputs the histogram of scores for each sequence in the complex and also returns the list of high scorers
+def scoreall():
+    returnstring = ""
+    returnstring += "score histogram all" + '\n'
+    scores =[]
+    l = len(seq) 
+    stretches = [seq[i:i+21] for i in range(len(seq) - 20)]
+
+
+    for i, s in enumerate(stretches):
+        scores += [[scoresequence(s), i + 1 + 10, 0]]
+        scores += [[scoresequence(reversecomplement(s)), i + 1 + 10, 0]]
+
+
+  
+
+    
+        
+
+    returnstring += "lt-50 : " + str( len([math.floor(i[0]) for i in scores if math.floor(i[0]) < -50])) + '\n'
+    for i in range(-50,100):
+        count = len([j[0] for j in scores if math.floor(j[0]) == i])
+        if count != 0:
+            returnstring += str(i) + " " + str(count) + '\n'
+    returnstring += '\n'
+
+    returnstring += "position list:"
+    matches = np.array([sc for sc in scores if sc[0] >= 10])
+    sortedmatches = matches[np.argsort(column(matches,1))]
+    for m in sortedmatches:
+        returnstring += str(m[1]) + " " + str(m[2]) + " " + str("%.4f" % round(m[0], 4)) + '\n'
+    returnstring += '\n'
+
+    return returnstring
+
+
+with  open(o, 'a') as file:
+    file.write(getnucleotidehistogram(seq))
+    file.write('\n')
+
+    file.write("count matrix:" + '\n')
+    for i in range(len(sitecounts)):
+        file.write(str(i-10) + " ")
+        for j in range(4):
+            file.write(str(round(sitecounts[i][j])) + " ")
+        file.write('\n')
+    file.write('\n')
+
+    file.write("frequency matrix:" + '\n')
+    for i in range(len(sitefrequencies)):
+        file.write(str(i-10) + " ")
+        for j in range(4):
+            file.write(str("%.4f" % round(sitefrequencies[i][j],4)) + " ")
+        file.write('\n')
+    file.write('\n')
+
+    file.write("weight matrix:" + '\n')
+    for i in range(len(weightmatrix)):
+        file.write(str(i-10) + " ")
+        for j in range(4):
+            file.write(str("%.4f" % round(weightmatrix[i][j],4)) + " ")
+        file.write('\n')
+    file.write('\n')
+
+    file.write("max score: " + str("%.10f" % round(sum([max(i) for i in weightmatrix]),10)) + '\n')
+    file.write('\n')
+
+    file.write(scorehistogramcds() + '\n')
+    file.write('\n')
+    
+    file.write(scoreall())
+    file.write('\n')
+    file.write("program:" + '\n')
+
+stop = timeit.default_timer()
+print("runtime: " + str(stop - start) + "s")
+
+    
+        
+
+

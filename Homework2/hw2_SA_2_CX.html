@@ -1,0 +1,48 @@
+<HTML>
+
+<head>
+<title> Genome 540 Homework Assignment 2 </title>
+</head>
+
+<body BGCOLOR="#FFFFFF" >
+  <h3 align=center>Genome 540 Homework Assignment 2</h3>
+  <h3 align="center">(Winter Quarter 2022)</h3>
+  <h3 align=center>Due Sunday Jan 23, 11:59pm</h3>
+
+  <ol>
+  <li style="margin-bottom: 15px;"> Write a program that generates the FASTA files of two simulated sequences. This program should:
+    <ul>
+    <li style="margin-bottom: 5px;"> read in a file in FASTA format </li>
+    <li style="margin-bottom: 5px;"> determine the nucleotide counts and frequencies, the dinucleotide counts and frequencies, and the length, for the input sequence </li>
+    <li style="margin-bottom: 5px;"> using an order-0 Markov model, produce a simulated sequence with the same length and nucleotide frequency as the input sequence, and then output a file in FASTA format containing the simulated sequence</li>
+    <li style="margin-bottom: 5px;"> using an order-1 Markov model, produce a simulated sequence with the same length and dinucleotide frequency as the input, and then output a file in FASTA format containing the simulated sequence</li>
+    </ul>
+  </li>
+  <p> The sequence names for your output sequences should indicate that they are simulated (and the model used). Note that the nucleotide and dinucleotide counts in your simulated sequences may differ slightly from those in the input, due to the randomization process. </p>
+
+  <li style="margin-bottom: 15px;"> Use your program in #1 above to generate two simulated FASTA files based on the length and nucleotide or dinucleotide frequency of <a href="http://bozeman.mbt.washington.edu/compbio/mbt599/assignments/data/hw1/mm10_chr12_100Mb_110Mb.fa">the 10-megabase <b>mouse</b> genomic region </a> used in homework 1.
+    <p>Your output should include the information below for each of the three fasta files (the original and two simulated) </p>
+    <ul>
+    <li style="margin-bottom: 5px;"> the name and first line of the fasta file</li>
+    <li style="margin-bottom: 5px;"> the nucleotide count histogram</li>
+    <li style="margin-bottom: 5px;"> the nucleotide frequencies</li>
+    <li style="margin-bottom: 5px;"> the dinucleotide count matrix</li>
+    <li style="margin-bottom: 5px;"> the dinucleotide frequency matrix</li>
+    <li style="margin-bottom: 5px;"> the conditional frequency matrix</li>
+    </ul>
+  </li>
+  <p> All frequencies should be given to 4 decimal places; and you should use the nucleotide order A, C, G, T for the matrix rows and columns. </p>
+
+  <li style="margin-bottom: 15px;"> Run your program from <a href="http://bozeman.mbt.washington.edu/compbio/mbt599/assignments/hw1_SA_CX.html">homework 1</a> twice. In both runs, sequence 1 should be <a href="http://bozeman.mbt.washington.edu/compbio/mbt599/assignments/data/hw1/hg38_chr14_90Mb_100Mb.fa">the 10-megabase <b>human</b> genomic region</a> used in homework 1. In the first run, sequence 2 should be the order-0 Markov model simulated sequence (from # 2 above). In the second run, sequence 2 should be the order-1 Markov model simulated sequence. Your output for each run should be the same format as for homework 1.</li>
+
+  <li style="margin-bottom: 15px;"> Answer this question after the simulated histogram, as shown in the template file:
+    <ul>
+    <li style="margin-bottom: 5px;">Given your results, what can you conclude about the statistical significance of matches between the orthologous mouse and human regions in homework 1?</li>
+    </ul>
+  </li>
+
+  <li>You must turn in your results <i>and</i> your computer program (<b>only the program in #1</b> above -- you don't need to turn in your HW1 program again!), using <a href="http://bozeman.mbt.washington.edu/compbio/mbt599/assignments/data/hw2/HW2_template.txt">this file</a> as a template. <b>Please put everything into ONE file - do not send an archive of files or a tar file.</b> After creating a plain text file (NOT a word processing document file) in this format, compress it (using either Unix compress, or gzip -- if you don't have access to either of these programs, let us know), and send it as an attachment to both Phil at phg@uw.edu and CX at cxqiu@uw.edu.</li>
+  </ol>
+
+</body>
+</HTML>

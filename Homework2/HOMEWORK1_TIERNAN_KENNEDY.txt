@@ -1,0 +1,19 @@
+Assignment: Assignment1
+Name: Tiernan Kennedy
+Email: tiernan7@cs.washington.edu
+Language: C++
+
+*=10000000
+A=2775536
+C=2239132
+G=2232476
+T=2752856
+N=0
+
+*=10000000
+A=2700592
+C=2303088
+G=2296528
+T=2699792
+N=0
+
