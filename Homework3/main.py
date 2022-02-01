@@ -5,7 +5,6 @@ import math
 import os
 import timeit
 
-
 #A function writes certain program checks to a log file
 def log(text):
     with open("log","a") as logfile:
@@ -16,7 +15,6 @@ start = timeit.default_timer()
 np.set_printoptions(suppress=True)
 
 #  record = SeqIO.read("Armadillidium_vulgare_contig1.gbff","genbank")
-
                          
 f = "Armadillidium_vulgare_contig1.gbff" #filename
 o = "TIERNAN_KENNEDY_HOMEWORK3.txt" #output filename
@@ -73,14 +71,14 @@ def getNucleotideHistogram(sequence):
     s = sum(nucleotideCounts)
     l = len(sequence)
     returnString = ""
-    returnString += "Background Counts" + '\n'
+    returnString += "Nucleotide Histogram:" + '\n'
     returnString += "A=" + str(int(nucleotideCounts[0])) + '\n'
     returnString += "C=" + str(int(nucleotideCounts[1])) + '\n'
     returnString += "G=" + str(int(nucleotideCounts[2])) + '\n'
     returnString += "T=" + str(int(nucleotideCounts[3])) + '\n'
     returnString += "N=" + str(int(l - s)) + '\n'
     returnString += '\n'
-    returnString += "Background Frequencies" + '\n'
+    returnString += "Background Frequency:" + '\n'
     returnString += "A=" + ("%.4f" % round(float((nucleotideCounts[0] + nucleotideCounts[3])) / (2*s), 4)) + '\n'
     returnString += "C=" + ("%.4f" % round(float((nucleotideCounts[1]+nucleotideCounts[2] )) / (2*s), 4)) + '\n'
     returnString += "G=" + ("%.4f" % round(float((nucleotideCounts[2]+nucleotideCounts[1])) / (2*s), 4)) + '\n'
@@ -110,16 +108,20 @@ log("The following text is on one line: " + str(removeEmptyCharacters("Line 1 \n
 #Returns True if the any of the words contain an ambiguous coordinate signature
 def badCoordinates(wordsArray):
     return (re.search("<+|>+", wordsArray[-1]) != None)
+
 log("It is " + str(badCoordinates(["10002000>303"])) + " that 10002000>303 is a bad coordinate" + '\n'
 )
 
+startSites = []
 
 #Takes in a CDS description containing a join statment
 #Returns an ordered list of the bases around the start of the CDS
 def brokenIntervals(intervals, comp): #Intervals is a list of each integer within a join statement in the orer of appearance, records whether or not the complemet
+    global startSites
     if not(comp): #Handles the case where the join intervals are the on forward strand
         returnIterator = [] 
         start = int(intervals[0]) - 1 #-1 adjustment tp translate genbank coordinates to array coordinates
+        startSites += [int(start + 1)]
         returnIterator = np.arange(start- 10 , start + 1) #generates the sites of the ten bases before and upto the start
         ranges = [int(i) - 1 for i in intervals] #converts the entire list of intervals to array coordinates
         forwardLength = [] 
@@ -140,6 +142,7 @@ def brokenIntervals(intervals, comp): #Intervals is a list of each integer withi
         returnIterator = []
         a = np.flip([int(i) - 1 for i in intervals])#Reverses the list of coordinates to account for navigating the interval in reverse and subtraction to convert to ar#ray coordinates
         start = int(a[0])#start at the array coordinate of the last element in forward strand on the coding interval
+        startSites += [int(start + 1)]
         returnIterator = np.flip(np.arange(start , start + 11))#generates the coordinat running from 11 before the start site to the start site
         forwardLength = []
         ind = -1#The distcance from the start site
@@ -168,11 +171,15 @@ def column(arr, i):
 log("The column second column of [[1,2,3],[4,5,6],[7,8,9]] is "  + str(column([[1,2,3],[4,5,6],[7,8,9]],1)) + '\n'
 )
 
+
+
 #Takes a string text from a CDS description, but not multiple lines
 def positionToChars(positionString):
+    global startSites
     if (re.search('complement', positionString) == None):# if there are no complement tags
         if (re.search('join', positionString) == None): #and no join tags
             start = int(re.findall("\d+", positionString)[0]) - 1 #then start site is the first numeral in the position string minus 1 to convert to array coordinates
+            startSites += [int(start + 1)]
             return [seq[i] for i in np.arange(start - 10, start + 11)]#and we can return the ten elements on either side
         else: #otherwise if there are no complement tags but there is a join statement
             intervals = re.findall("\d+", positionString)# convert the string to a flat list of position numeral for the brokenIntervals function
@@ -180,6 +187,7 @@ def positionToChars(positionString):
     else:#otherwise if there are complement tags
         if (re.search('join', positionString) == None):#but no join statements
             start = int(re.findall("\d+", positionString)[-1]) - 1 #start at the last numeral in the CDS description, and subtract 1 for array coordinates
+            startSites += [int(start + 1)]
             return[baseDict[seq[i]] for i in np.flip( np.arange(start - 10, start + 11))]#return the reversed order of the ten elements around the start site
 
         else:# and if there are no join tags but the start is on the complementary strand
@@ -212,7 +220,6 @@ for i, lines in enumerate(allLines):
                 positions.pop(-1)#Deletes the position if it was marked as such
 
 
-
 backgroundCounts = np.zeros(4)
 backgroundFrequencies = np.zeros(4)
 
@@ -225,6 +232,9 @@ for b  in bases:#Converts the frequencies of nucleotides to their ratios
 
 
 allSequences = [positionToChars(pos) for pos in positions]#Creating an array of windows of ten nucleotides on either side of each CDS feature
+
+markedSites = ["".join(s) for s in allSequences]
+
 
 siteCounts = np.zeros((21,4))
 siteFrequencies = np.zeros((21,4))
@@ -274,21 +284,22 @@ def scoreHistogramCDS():
     for s in allSequences:#For each sequence we collected from the CDS sites, we add its score, rounded down, to a list
         scores += [math.floor(scoreSequence(s))]
 
-      
-    returnString += "lt-50 : " + str(len([i for i in scores if i < -50])) + '\n'#for each bin in the histogram we...
+
     for i in range(-50,100):
         count = len([j for j in scores if j == i]) #count the number of each score in the list and..
         if count != 0:
             returnString += str(i) + " " + str(count) + '\n' #Add that row to the histogram if the bin is nonempty
-    returnString += '\n'
+
+    if (len([i for i in scores if i < -50]) != 0):
+        returnString += "lt-50 " + str(len([i for i in scores if i < -50])) + '\n'
       
+    returnString += '\n'
     return returnString
 
-
-#A function that computes outputs the histogram of scores for each sequence in the complex and also returns the list of high scorers
+#a function that computes outputs the histogram of scores for each sequence in the complex and also returns the list of high scorers
 def scoreAll():
     returnString = ""
-    returnString += "Score Histogram All" + '\n'
+    returnString += "Score Histogram All:" + '\n'
     scores =[]
     l = len(seq) 
     stretches = [seq[i:i+21] for i in range(len(seq) - 20)]
@@ -296,33 +307,28 @@ def scoreAll():
 
     for i, s in enumerate(stretches):
         scores += [[scoreSequence(s), i + 1 + 10, 0]]
-        scores += [[scoreSequence(reverseComplement(s)), i + 1 + 10, 0]]
+        scores += [[scoreSequence(reverseComplement(s)), i + 1 + 10, 1]]  
 
 
-  
-
-    
-        
-
-    returnString += "lt-50 : " + str( len([math.floor(i[0]) for i in scores if math.floor(i[0]) < -50])) + '\n'
     for i in range(-50,100):
         count = len([j[0] for j in scores if math.floor(j[0]) == i])
         if count != 0:
             returnString += str(i) + " " + str(count) + '\n'
+
+    returnString += "lt-50 " + str( len([math.floor(i[0]) for i in scores if math.floor(i[0]) < -50])) + '\n'
     returnString += '\n'
 
     returnString += "Position List:"
-    matches = np.array([sc for sc in scores if sc[0] >= 10])
+    matches = np.array([sc for sc in scores if (sc[0] >= 10 and int(sc[1]) not in startSites)])
     sortedMatches = matches[np.argsort(column(matches,1))]
     for m in sortedMatches:
-        returnString += str(m[1]) + " " + str(m[2]) + " " + str("%.4f" % round(m[0], 4)) + '\n'
+        returnString += str(int(m[1])) + " " + str(int(m[2])) + " " + str("%.4f" % round(m[0], 4)) + '\n'
     returnString += '\n'
 
     return returnString
 
-
 with  open(o, 'a') as file:
-    file.write(getNucleotideHistogram(seq))
+    file.write(getNucleotideHistogram(seq) + '\n')
     file.write('\n')
 
     file.write("Count Matrix:" + '\n')

@@ -821,3 +821,553 @@ The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 3
 The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
 The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
 The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Background Counts
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequencies
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The are are 6 Gs in TGATGGTATGNNTGATGK
+The reverse complement of T is: A
+The nucleotide histogram for ATGCTCANNNNNNNKJ is: Nucleotide Histogram:
+A=2
+C=2
+G=1
+T=2
+N=9
+
+Background Frequency:
+A=0.2857
+C=0.2143
+G=0.2143
+T=0.2857
+
+The following text is on one line: ['L', 'i', 'n', 'e', ' ', '1', ' ', '\n', ' ', 'L', 'i', 'n', 'e', ' ', '2']
+It is True that 10002000>303 is a bad coordinate
+The array sites for complement(join(1..10,11..30)) is [39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19]
+The column second column of [[1,2,3],[4,5,6],[7,8,9]] is [2, 5, 8]
+The characters for (1..10) is :['T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'T', 'A', 'A', 'T', 'A', 'A', 'T', 'T', 'T', 'A', 'A', 'T', 'T']
+The score of NNNNNNNNNNNNNNNNNNNNA is 0.27501157122924513

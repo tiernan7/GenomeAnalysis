@@ -1,0 +1,4 @@
+TODO:
+
+Find a way to account for edge weights. Can do this either with by keeping a dictionary of out edges and weights or through another careful data structure for example:
+    store all ingoing and outgoign edges within nodes as structs
