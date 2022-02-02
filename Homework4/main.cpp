@@ -247,7 +247,7 @@ vector<int> * Graph::getHighestPath(int start, int end){
 
 
 int main(){
-    Graph * input = new Graph("testDAG.txt");
+    Graph * input = new Graph("CP003508.txt");
     cout << input->countNodes() << endl;
     for (auto &i : *(input)->getHighestPath(-999,-999)){
         cout << i << endl;
