@@ -8,6 +8,10 @@ struct Edge{
     double weight;
 };
 
+//A function for logging to a File
+//
+
+
 //A class representing a vertex on a graph
 class Vertex{
     private:

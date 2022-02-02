@@ -127,7 +127,7 @@ void Graph::processLine(string line){//Creates a node or edge from a given line 
                 startOrEnd = 1;
             }        
             if (t == "End"){
-            startOrEnd = -1;
+                startOrEnd = -1;
            } 
         }
         
@@ -136,7 +136,6 @@ void Graph::processLine(string line){//Creates a node or edge from a given line 
         Vertex * v = new Vertex(label, startOrEnd);
         //creates the vertex and adds it to the nodes list
         nodeList->push_back(v);
-        nodeList->back()->addParent(-1,0.0);// This line adds a node as its own parent, with zero weight and -1 as the label
         }
         
     else if (words[0] == "E"){//Handles the case where the line is an edge
@@ -151,7 +150,8 @@ void Graph::processLine(string line){//Creates a node or edge from a given line 
         end >> e;
         (*nodeList)[int(s)]->addChild(s,wt);
         (*nodeList)[int(e)]->addParent(s,wt);
-
+        
+        
         
      }
 
@@ -178,6 +178,7 @@ Graph::Graph(string fileName){//Initializes a graph from a file
         throw invalid_argument( "File does not exist" );
     }
     assert(isValidGraph());
+
 }
 
 
@@ -203,24 +204,27 @@ vector<int> * Graph::getHighestPath(int start, int end){
                         highestWeight = p.weight;
                         highestLabel = p.otherEnd;
                     }
+
                 }
-                if (highestWeight == 0){
-                        highestWeight = 0.0;
-                        highestLabel = -1;
+                if (highestWeight + nodeList->at(highestLabel)->getHighestWeight()  < 0){
+                    highestWeight = 0.0;
+                    highestLabel = -1;
+                    v->setHighestParent(highestLabel); 
+                    v->setHighestWeight(highestWeight);
                 }
                 else{
-                v->setHighestParent(highestLabel); 
-                v->setHighestWeight(nodeList->at(highestLabel)->getHighestWeight() + highestWeight);
+                    v->setHighestParent(highestLabel); 
+                    v->setHighestWeight(nodeList->at(highestLabel)->getHighestWeight() + highestWeight);
                 }
             }
             
         }
     }
-    double highest = numeric_limits<double>::infinity(); //varibles to keep track of the longest path
+    double highest = -numeric_limits<double>::infinity(); //varibles to keep track of the longest path
     int highestLabel = -9999;
 
     for (auto &v : *nodeList){
-        if (v->getHighestWeight() > -highest){
+        if (v->getHighestWeight() > highest){
             highest = v->getHighestWeight();
             highestLabel = v->getLabel();
         }
@@ -230,21 +234,20 @@ vector<int> * Graph::getHighestPath(int start, int end){
     returnPath->push_back(pos);
     do{
         pos = nodeList->at(pos)->getHighestParent();
-
         returnPath->push_back(pos);
+        
     } while ((*nodeList).at(pos)->getHighestParent() != -1);
 
     reverse(returnPath->begin(), returnPath->end());
 
 
     return returnPath;
-
     
 }
 
 
 int main(){
-    Graph * input = new Graph("graphCP003508.txt");
+    Graph * input = new Graph("testDAG.txt");
     cout << input->countNodes() << endl;
     for (auto &i : *(input)->getHighestPath(-999,-999)){
         cout << i << endl;
