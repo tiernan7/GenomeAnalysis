@@ -22,8 +22,9 @@ class Vertex{
         int startOrEnd;
         std::vector<Edge> children;
         std::vector<Edge> parents;
-        int highestParent;
+        int highestParent = -99;
         double highestWeight;
+        int highestChild;
 
     public:
         Vertex(int label, int sOrE);
@@ -38,6 +39,7 @@ class Vertex{
         double getHighestWeight();
         void setHighestWeight(double weight);
         std::vector<Edge> getChildren();
+        void setHighestChild(int c);
 };
 
 //A class representing an entire graph with member functions for graph search

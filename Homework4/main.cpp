@@ -41,7 +41,7 @@ bool Vertex::isEnd(){//Return true if the vertex is an end vertex
     }
 }
 
-vector<Edge> getChildren(){
+vector<Edge> Vertex::getChildren(){
     return children;
 }
 
@@ -310,21 +310,74 @@ vector<int> * Graph::getHighestPath(int start, int end){
     }
 
     else{ //Case where start and end nodes are set
-        Vertex * end  = nodeList->at(end);
         
-        for (int i = end->getLabel(); i>= 0; i--){
-            if (nodeList->at(i)->getChildren().size() == 0){
-                nodeList->at(i)->setHighestWeight(0.0);
-                nodeList->at(i)->setHighestChild(-1);
+        //
 
+        setPathStart(startNode);
+        setPathEnd(endNode);
+        string p = ""; 
+        for (int i = startNode; i <= endNode; i++){
+            if (nodeList->at(i)->getParents().size() == 0){
+                if (i == startNode){
+                    nodeList->at(i)->setHighestWeight(0);
+                    nodeList->at(i)->setHighestParent(0);
+                }
+                else {
+                    nodeList->at(i)->setHighestWeight(0.0);
+                    nodeList->at(i)->setHighestParent(-99);
+
+                }
                 
             }
-        }
-        
-    }
+            else{
+                double highestLabel = -1;
+                double highestWeight = -numeric_limits<double>::infinity(); //initialize for finding max
+                
+               for (auto &n : nodeList->at(i)->getParents()){
+                    cout<< "parent label: " << n.label << endl;
+                   if (nodeList->at(n.otherEnd)->getHighestParent() == -99){
+                        cout << "skipped" << highestWeight <<endl;
+                       cout<< n.weight + nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
+                       cout <<".."<<endl;
+                       cout <<endl;
+                       ;
+                   }
+                   else if (n.weight + nodeList->at(n.otherEnd)->getHighestWeight() > highestWeight){
+                       cout << highestWeight << endl;
+                       cout << nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
+                       cout << n.weight << endl;
+                       cout<< n.weight + nodeList->at(n.otherEnd)->getHighestWeight() <<endl;          highestWeight = n.weight + nodeList->at(n.otherEnd)->getHighestWeight();          highestLabel = n.otherEnd;
 
- 
+                    cout <<".."<<endl;
+                
+
+                        
+                  }
+                   else{
+                       cout << highestWeight<<endl;
+                       cout << nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
+                       cout << n.weight << endl;
+                       cout<< "too low "<< n.weight + nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
+                   }
+                        
+                }
+                cout << "final: " << highestWeight << endl;
+                if (nodeList->at(i)->getParents().size() != 0){
+                    cout << "gh" << endl;
+                    nodeList->at(i)->setHighestWeight(highestWeight);
+                    nodeList->at(i)->setHighestParent(highestLabel);
+                }
+                cout << "...."<<endl;
+                cout<<endl;    
+
+              }
+        }
+        setScore(nodeList->at(endNode)->getHighestWeight());
+    }
 }
+
+
+
 
 string Graph::getScore(){
     string returnString;
