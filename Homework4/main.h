@@ -2,6 +2,9 @@
 #define MAIN
 
 
+//A function for writing to the outfile
+void output(std::string text);
+
 
 //A struct representing an edge
 //Each edge is stored to be stored within a vertex object
@@ -11,8 +14,6 @@ struct Edge{
     double weight;
 };
 
-//A function for logging to a File
-//
 
 
 //A class representing a vertex on a graph

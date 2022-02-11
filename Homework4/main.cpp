@@ -15,6 +15,16 @@ using namespace std;
 //NOTES: This program assumes that the input graph is topologically sorted, and is thus acyclic
 
 
+ofstream outfile;
+
+void output(string text){
+    outfile.open("TIERNAN_KENNEDY_HOMEWORK_4.txt");
+    if (outfile.is_open()){
+        outfile << text;
+    }
+    outfile.close();
+}
+
 //A class representing a node/vertex in a directed graph
 Vertex::Vertex(int lab, int sOrE){
     assert(to_string(lab).length() <= 10);
@@ -315,12 +325,11 @@ vector<int> * Graph::getHighestPath(int start, int end){
 
         setPathStart(startNode);
         setPathEnd(endNode);
-        string p = ""; 
         for (int i = startNode; i <= endNode; i++){
             if (nodeList->at(i)->getParents().size() == 0){
-                if (i == startNode){
+                    if (i == startNode){
                     nodeList->at(i)->setHighestWeight(0);
-                    nodeList->at(i)->setHighestParent(0);
+                    nodeList->at(i)->setHighestParent(-1);
                 }
                 else {
                     nodeList->at(i)->setHighestWeight(0.0);
@@ -334,45 +343,50 @@ vector<int> * Graph::getHighestPath(int start, int end){
                 double highestWeight = -numeric_limits<double>::infinity(); //initialize for finding max
                 
                for (auto &n : nodeList->at(i)->getParents()){
-                    cout<< "parent label: " << n.label << endl;
                    if (nodeList->at(n.otherEnd)->getHighestParent() == -99){
-                        cout << "skipped" << highestWeight <<endl;
-                       cout<< n.weight + nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
-                       cout <<".."<<endl;
-                       cout <<endl;
                        ;
                    }
                    else if (n.weight + nodeList->at(n.otherEnd)->getHighestWeight() > highestWeight){
-                       cout << highestWeight << endl;
-                       cout << nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
-                       cout << n.weight << endl;
-                       cout<< n.weight + nodeList->at(n.otherEnd)->getHighestWeight() <<endl;          highestWeight = n.weight + nodeList->at(n.otherEnd)->getHighestWeight();          highestLabel = n.otherEnd;
+                       highestWeight = n.weight + nodeList->at(n.otherEnd)->getHighestWeight();         
+                       highestLabel = n.otherEnd;
 
-                    cout <<".."<<endl;
-                
-
-                        
                   }
                    else{
-                       cout << highestWeight<<endl;
-                       cout << nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
-                       cout << n.weight << endl;
-                       cout<< "too low "<< n.weight + nodeList->at(n.otherEnd)->getHighestWeight() <<endl;
+                       ;
                    }
                         
                 }
-                cout << "final: " << highestWeight << endl;
                 if (nodeList->at(i)->getParents().size() != 0){
-                    cout << "gh" << endl;
                     nodeList->at(i)->setHighestWeight(highestWeight);
                     nodeList->at(i)->setHighestParent(highestLabel);
                 }
-                cout << "...."<<endl;
-                cout<<endl;    
 
               }
         }
         setScore(nodeList->at(endNode)->getHighestWeight());
+
+        string s = "";
+        int pos = endNode;    
+       do{ 
+            for (auto &p : nodeList->at(pos)->getParents()){
+                if (p.otherEnd == nodeList->at(pos)->getHighestParent()){
+                    s += p.label;
+                    pos = p.otherEnd;
+                    break;
+                }
+            }
+
+       } while ((*nodeList).at(pos)->getHighestParent() != -1);
+
+
+        reverse(returnPath->begin(), returnPath->end());
+        reverse(s.begin(),s.end());
+
+
+        setPath(s);
+
+        return returnPath;
+
     }
 }
 
@@ -419,20 +433,32 @@ string Graph::summarize(){
 
 
 int main(){
-    cout.precision(2);
+    auto start = chrono::high_resolution_clock::now();
+    string outString = "";
+    
+    outString += ("Assignment: GS 540 HW4 \n Name: Tiernan Kennedy \n Email: tiernan7@cs.washington.edu \n Language: C++ \n Runtime: \n");
+    outString += ("\n");
+    
+    outString += "Part 1\n";
     Graph * part1 = new Graph("graph.txt");
     part1->getHighestPath(part1->startNode, part1->endNode);
-    cout << part1->summarize();
-   
+    outString += (part1->summarize());
+
+    outString += "Part 2\n";
     part1->setStart();
     part1->setEnd();
     part1->getHighestPath(part1->startNode, part1->endNode);
-    cout << part1->summarize();
+    outString += (part1->summarize());
 
+    outString += "Part 3\n";
     Graph * part3 = new Graph("graphGCF_000967895.1_ASM96789v1_genomic.fna");
     part3->getHighestPath(part3->startNode, part3->endNode);
-    cout << part3->summarize();
+    outString += (part3->summarize());
 
+    output(outString);
     
+    auto stop = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::seconds>(stop - start);
+    cout << duration.count() << " s" << endl;
     return 0;
 }
